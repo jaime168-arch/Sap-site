@@ -1,12 +1,55 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>SAP Fiori - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    
-    
+    <header>
+        <div class="sap-logo">SAP S/4HANA</div>
+        <div class="user-profile">Usuário Corporativo</div>
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="produtos.html">Estoque de Materiais</a>
+    </nav>
+
+    <main>
+        <h2>Minha Visão Geral</h2>
+        
+        <div class="dashboard-grid">
+            <div class="sap-tile" onclick="location.href='produtos.html'">
+                <div class="sap-tile-title">Gerenciar Produtos</div>
+                <div class="sap-tile-number">125</div>
+                <div class="sap-tile-footer">Itens em estoque</div>
+            </div>
+            
+            <div class="sap-tile">
+                <div class="sap-tile-title">Ordens de Compra</div>
+                <div class="sap-tile-number">12</div>
+                <div class="sap-tile-footer">Aguardando aprovação</div>
+            </div>
+
+            <div class="sap-tile">
+                <div class="sap-tile-title">Vendas Mensais</div>
+                <div class="sap-tile-number">R$ 45k</div>
+                <div class="sap-tile-footer">Meta: 80%</div>
+            </div>
+
+            <div class="sap-tile">
+                <div class="sap-tile-title">Satisfação Cliente</div>
+                <div class="sap-tile-number">4.8</div>
+                <div class="sap-tile-footer">Índice NPS</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        Sistema de Gestão Integrado - SAP Replica © 2026
+    </footer>
+
 </body>
 </html>

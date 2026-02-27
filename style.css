@@ -1,0 +1,144 @@
+/* Reset e Variáveis SAP */
+:root {
+    --sap-shell-color: #354a5f;
+    --sap-background: #edeff0;
+    --sap-font: '72', '72full', Arial, Helvetica, sans-serif;
+    --sap-blue: #0854a0;
+    --sap-tile-bg: #ffffff;
+    --sap-border: #d9d9d9;
+    --sap-text: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--sap-font);
+    background-color: var(--sap-background);
+    color: var(--sap-text);
+}
+
+/* Header / Shell Bar */
+header {
+    background-color: var(--sap-shell-color);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+}
+
+.sap-logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Navegação */
+nav {
+    background-color: white;
+    border-bottom: 1px solid var(--sap-border);
+    padding: 10px 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--sap-blue);
+    margin-right: 20px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo Principal */
+main {
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+/* Layout de Cards (Dashboard) */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.sap-tile {
+    background: var(--sap-tile-bg);
+    border: 1px solid var(--sap-border);
+    padding: 15px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.sap-tile:hover {
+    background-color: #f5f5f5;
+}
+
+.sap-tile-title {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.sap-tile-number {
+    font-size: 1.8rem;
+    color: var(--sap-blue);
+}
+
+/* Tabelas (Página de Produtos) */
+.sap-table-container {
+    background: white;
+    border: 1px solid var(--sap-border);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #f7f7f7;
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid var(--sap-border);
+    font-size: 0.85rem;
+    color: #666;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid var(--sap-border);
+    font-size: 0.9rem;
+}
+
+tr:hover {
+    background-color: #eaf1f7;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    border-top: 1px solid var(--sap-border);
+    padding: 10px 20px;
+    text-align: right;
+    font-size: 0.8rem;
+    color: #666;
+}

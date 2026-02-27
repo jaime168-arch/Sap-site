@@ -1,21 +1,78 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serviços SAP</title>
+    <title>SAP - Estoque de Materiais</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <div>
-            <div id="sap_navbar">
-
-            <img id="sap_logo" src="assets/SAP.logo.png">
-            <h1 id="title_SAP">Serviços SAP</h1>
-            </div>
-
-        </div>
+        <div class="sap-logo">SAP S/4HANA</div>
+        <div class="user-profile">Usuário Corporativo</div>
     </header>
-    
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="produtos.html">Estoque de Materiais</a>
+    </nav>
+
+    <main>
+        <h2>Lista de Materiais (Estoque)</h2>
+
+        <div class="sap-table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cód. Material</th>
+                        <th>Descrição</th>
+                        <th>Centro</th>
+                        <th>Quantidade</th>
+                        <th>Unidade</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MAT-10020</td>
+                        <td>Aço Carbono Galvanizado</td>
+                        <td>1000</td>
+                        <td>500</td>
+                        <td>KG</td>
+                        <td style="color: green; font-weight: bold;">Disponível</td>
+                    </tr>
+                    <tr>
+                        <td>MAT-20055</td>
+                        <td>Parafuso Sextavado 5/8</td>
+                        <td>1000</td>
+                        <td>2.400</td>
+                        <td>UN</td>
+                        <td style="color: green; font-weight: bold;">Disponível</td>
+                    </tr>
+                    <tr>
+                        <td>MAT-50012</td>
+                        <td>Resina Industrial XP</td>
+                        <td>2000</td>
+                        <td>15</td>
+                        <td>L</td>
+                        <td style="color: red; font-weight: bold;">Estoque Baixo</td>
+                    </tr>
+                    <tr>
+                        <td>MAT-88090</td>
+                        <td>Componente Eletrônico V8</td>
+                        <td>3000</td>
+                        <td>0</td>
+                        <td>UN</td>
+                        <td style="color: gray; font-weight: bold;">Indisponível</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        Sistema de Gestão Integrado - SAP Replica © 2026
+    </footer>
+
 </body>
 </html>
